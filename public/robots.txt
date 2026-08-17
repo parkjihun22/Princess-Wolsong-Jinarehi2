@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gjws-jinarehii.comsitemap.xml
+Sitemap: https://gjws-jinarehii.com/sitemap.xml
