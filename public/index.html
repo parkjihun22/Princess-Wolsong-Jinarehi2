@@ -62,97 +62,176 @@
 
   <!-- 7) Static structured data: JS 실행 전 검색엔진 보조용 정적 데이터 -->
   <script id="static-seo-jsonld" type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://cheongju-hanyanglips.com/#organization",
-        "name": "공주 월송 진아레히",
-        "url": "https://cheongju-hanyanglips.com/",
-        "logo": "https://cheongju-hanyanglips.com/logo512.ico",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+82-1533-8848",
-          "contactType": "customer service",
-          "areaServed": "KR",
-          "availableLanguage": "Korean"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://cheongju-hanyanglips.com/#organization",
+          "name": "공주 월송 진아레히",
+          "url": "https://cheongju-hanyanglips.com/",
+          "logo": "https://cheongju-hanyanglips.com/logo512.ico",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+82-1533-8848",
+            "contactType": "customer service",
+            "areaServed": "KR",
+            "availableLanguage": "Korean"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cheongju-hanyanglips.com/#website",
+          "url": "https://cheongju-hanyanglips.com/",
+          "name": "공주 월송 진아레히",
+          "description": "공주 월송 진아레히의 사업개요, 입지환경, 단지안내, 공급정보, 타입안내 및 모델하우스 방문예약 정보를 제공합니다.",
+          "inLanguage": "ko-KR",
+          "publisher": {
+            "@id": "https://cheongju-hanyanglips.com/#organization"
+          }
+        },
+        {
+          "@type": "ApartmentComplex",
+          "@id": "https://cheongju-hanyanglips.com/#apartment",
+          "name": "공주 월송 진아레히",
+          "url": "https://cheongju-hanyanglips.com/",
+          "description": "충청남도 공주시 금흥동 39-4번지 일원에 지하 2층~지상 최고 27층, 7개 동, 총 811세대 규모로 조성되는 공주 월송 진아레히의 분양정보, 공급안내, 입주자모집공고, 타입안내 및 모델하우스 방문예약 정보를 제공합니다.",
+          "telephone": "1533-8848",
+          "brand": {
+            "@type": "Brand",
+            "name": "진아레히"
+          },
+          "creator": [
+            {
+              "@type": "Organization",
+              "name": "(주)리채"
+            },
+            {
+              "@type": "Organization",
+              "name": "아이리스건설(주)"
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "KR",
+            "addressRegion": "충청남도",
+            "addressLocality": "공주시",
+            "streetAddress": "금흥동 39-4번지 일원"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "공주 월송 진아레히 주요 메뉴",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "브랜드소개",
+                "url": "https://cheongju-hanyanglips.com/Brand/intro"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "사업안내",
+                "url": "https://cheongju-hanyanglips.com/BusinessGuide/intro"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "입지환경",
+                "url": "https://cheongju-hanyanglips.com/LocationEnvironment/intro"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "단지안내",
+                "url": "https://cheongju-hanyanglips.com/ComplexGuide/intro"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "분양안내",
+                "url": "https://cheongju-hanyanglips.com/BusinessGuide/documents"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "타입안내",
+                "url": "https://cheongju-hanyanglips.com/FloorPlan/59A"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "SiteNavigationElement",
+                "name": "홍보센터",
+                "url": "https://cheongju-hanyanglips.com/Promotion/Customer"
+              }
+            }
+          ]
         }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://cheongju-hanyanglips.com/#website",
-        "url": "https://cheongju-hanyanglips.com/",
-        "name": "공주 월송 진아레히",
-        "inLanguage": "ko-KR",
-        "publisher": { "@id": "https://cheongju-hanyanglips.com/#organization" }
-      },
-      {
-        "@type": "ApartmentComplex",
-        "@id": "https://cheongju-hanyanglips.com/#apartment",
-        "name": "공주 월송 진아레히",
-        "url": "https://cheongju-hanyanglips.com/",
-        "description": "충청북도 청주시 상당구 지북동 247번지 일원에 조성되는 월송 진아레히 949세대 분양, 청약, 공급정보, 견본주택과 모델하우스 방문예약을 안내하는 공식 홈페이지입니다.",
-        "telephone": "1533-8848",
-        "brand": { "@type": "Brand", "name": "한양립스 더 벨루체" },
-        "creator": { "@type": "Organization", "name": "한양건설" },
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "KR",
-          "addressRegion": "충청북도",
-          "addressLocality": "청주시",
-          "streetAddress": "상당구 지북동 247번지 일원"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "name": "공주 월송 진아레히 주요 메뉴",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "item": { "@type": "SiteNavigationElement", "name": "브랜드소개", "url": "https://cheongju-hanyanglips.com/Brand/intro" } },
-          { "@type": "ListItem", "position": 2, "item": { "@type": "SiteNavigationElement", "name": "사업안내", "url": "https://cheongju-hanyanglips.com/BusinessGuide/intro" } },
-          { "@type": "ListItem", "position": 3, "item": { "@type": "SiteNavigationElement", "name": "입지환경", "url": "https://cheongju-hanyanglips.com/LocationEnvironment/intro" } },
-          { "@type": "ListItem", "position": 4, "item": { "@type": "SiteNavigationElement", "name": "단지안내", "url": "https://cheongju-hanyanglips.com/ComplexGuide/intro" } },
-          { "@type": "ListItem", "position": 5, "item": { "@type": "SiteNavigationElement", "name": "분양안내", "url": "https://cheongju-hanyanglips.com/BusinessGuide/documents" } },
-          { "@type": "ListItem", "position": 6, "item": { "@type": "SiteNavigationElement", "name": "타입안내", "url": "https://cheongju-hanyanglips.com/FloorPlan/59A" } },
-          { "@type": "ListItem", "position": 7, "item": { "@type": "SiteNavigationElement", "name": "홍보센터", "url": "https://cheongju-hanyanglips.com/Promotion/Customer" } }
-        ]
-      }
-    ]
-  }
-</script>
+      ]
+    }
+    </script>
 </head>
 
 <body>
   <noscript>
     <section>
       <h1>공주 월송 진아레히</h1>
+
       <p>
-        공주 월송 진아레히 공식 홈페이지입니다. 청주시 상당구 지북동 247번지 일원에 계획된
-        월송 진아레히 949세대의 사업개요, 공급안내, 분양일정, 청약정보,
-        분양가 상담, 견본주택과 모델하우스
-        방문예약 정보를 확인하실 수 있습니다.
+        공주 월송 진아레히 홈페이지입니다. 충청남도 공주시 금흥동 39-4번지
+        일원에 조성되는 총 811세대 아파트의 사업개요, 공급안내, 분양일정,
+        입주자모집공고, 84㎡A·B·104㎡·116㎡·132㎡ 타입, 분양가 상담,
+        견본주택 및 모델하우스 방문예약 정보를 확인하실 수 있습니다.
       </p>
+
       <nav aria-label="공주 월송 진아레히 주요 메뉴">
         <a href="/">홈</a>
+
         <a href="/Brand/intro">브랜드소개</a>
         <a href="/Brand/video">홍보영상</a>
+
         <a href="/BusinessGuide/intro">사업안내</a>
         <a href="/BusinessGuide/plan">분양일정</a>
+
         <a href="/LocationEnvironment/intro">입지환경</a>
         <a href="/LocationEnvironment/primium">프리미엄</a>
-        <a href="/ComplexGuide/intro">단지안내</a>
+
+        <a href="/ComplexGuide/intro">단지배치도</a>
         <a href="/ComplexGuide/detailintro">호수배치도</a>
         <a href="/ComplexGuide/community">커뮤니티</a>
-        <a href="/SalesInfo/announcement">입주자 모집공고</a>
+
         <a href="/BusinessGuide/documents">공급안내</a>
+        <a href="/SalesInfo/announcement">입주자 모집공고</a>
         <a href="/SalesInfo/guide">계약서류안내</a>
-        <a href="/FloorPlan/59A">타입안내</a>
-        <a href="/FloorPlan/59B">59B</a>
-        <a href="/FloorPlan/84A">75A</a>
-        <a href="/FloorPlan/84B">75B</a>
-        <a href="/FloorPlan/114A">84A</a>
-        <a href="/FloorPlan/114B">84B</a>
+
+        <a href="/FloorPlan/59A">84㎡A</a>
+        <a href="/FloorPlan/59B">84㎡B</a>
+        <a href="/FloorPlan/84A">104㎡</a>
+        <a href="/FloorPlan/84B">116㎡</a>
+        <a href="/FloorPlan/114A">132㎡</a>
         <a href="/FloorPlan/Emodel">E-모델하우스</a>
+
         <a href="/Promotion/Customer">관심고객등록</a>
       </nav>
     </section>
