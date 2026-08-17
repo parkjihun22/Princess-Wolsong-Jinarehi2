@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cheongju-hanyanglips.com/sitemap.xml
+Sitemap: https://gjws-jinarehii.comsitemap.xml

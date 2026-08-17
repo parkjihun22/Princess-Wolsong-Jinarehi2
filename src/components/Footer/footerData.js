@@ -12,7 +12,7 @@ const footerData = {
   familySites: [
     {
       name: "공주 월송 진아레히",
-      url: "https://cheongju-hanyanglips.com/",
+      url: "https://gjws-jinarehii.com",
     },
   ],
   links: [
